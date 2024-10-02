@@ -1,0 +1,107 @@
+:root {
+    --primary-color: #0078FC;
+    --secondary-color: #7D7D7D;
+    --text-color: #3C3C3C;
+    --heading-color: #6A6A6A;
+    --border-color: #dddddd9e;
+    --background-color: #ffffff;
+    --black-color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-color);
+}
+
+.hero {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    border-bottom: none;
+}
+
+.hero .profile-pic {
+    margin-top: 25px;
+    border-radius: 50%;
+}
+
+.hero-txt {
+    text-align: center;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.hero-txt h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+.hero-txt p{
+    margin-bottom: 10px;
+}
+section {
+    border-bottom: 3px inset var(--border-color);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: var(--heading-color);
+    font-size: 1.5rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    border: 3px solid rgba(128, 128, 128, 0.058);
+    border-radius: 3px;
+}
+
+.flex-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding: 0;
+    margin: 0;
+}
+
+.flex-list li {
+    width: 150px;
+    height: 80px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black-color);
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.flex-list li a {
+    color: var(--background-color);
+    text-decoration: none;
+    margin-left: 3px;
+}
+
+.social-media .links a {
+    margin-right: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.education ul li,
+.experience ul li,
+.interests ul li,
+.skills ul li {
+    color: var(--background-color);
+}
